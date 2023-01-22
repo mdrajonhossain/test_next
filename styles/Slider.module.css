@@ -1,0 +1,26 @@
+.div_slider{
+	width: 100%;
+	background: teal;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+.main_slider{
+	width: 70%;	
+	margin: auto;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+	.main_slider{
+		width: 85%;
+		background: teal;
+		margin: auto;
+	}
+
+	.main_slider_image{
+		line-height: 10px;
+	}
+
+ 	 
+}

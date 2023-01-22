@@ -1,0 +1,266 @@
+
+
+/*header start*/
+.nav_header{	
+	width: 100%;	
+	font-size: 18px;
+}
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+	padding: 0 2rem;
+	background-color: teal;
+	color: white;
+}
+
+.navber ul li{	
+	display: inline;
+	padding: 20px;
+	cursor: pointer;
+}
+
+.navber ul li:hover{
+	background: #f39200;
+	color: white;
+	border-radius: 8px;
+}
+ 
+.toggle{
+	display: none;
+}
+.tab_close_btn{
+	display: none;	
+}
+
+@media only screen and (max-width: 1024px) {
+	.toggle{
+		display: block;	
+		cursor: pointer;	
+	}
+
+	.tab_close_btn{
+		display: block;	
+		position: absolute;
+		 z-index: 110;
+		 background: teal;		 
+		 top: 20px;
+		 right: 30px; 
+		 cursor: pointer;		 
+	}
+
+	.navber ul{
+		margin: auto;
+		width: 300px;
+	}
+	.navber ul li{	
+		display: block;
+		cursor: pointer;		
+		font-size: 20px;
+		justify-content: center;
+		text-align: center;
+  		align-items: center;  		
+  		padding: 20px;   		
+	}
+	.navber ul li:hover{
+		background: lightgray;		
+		border-radius: 20px;
+		color: teal;
+	}
+
+	.navber{
+		display: none;
+		padding-top: 60px;
+		position: absolute;
+		z-index: 110;
+		background: green;
+		width: 100%;
+		height: 100vh;		
+		left: 0px;
+		top: 0px;
+	}
+
+	.navber_show{
+		display: block;
+		padding-top: 60px;
+		position: absolute;
+		z-index: 110;
+		background: teal;
+		width: 100%;
+		height: 100vh;
+		top: 0px;
+		left: 0px; 		
+	}
+ 
+ 	.navber_show ul{
+		margin: auto;
+		width: 300px;
+	}
+	.navber_show ul li{	
+		display: block;
+		cursor: pointer;		
+		font-size: 18px;
+		justify-content: center;
+		text-align: center;
+  		align-items: center;  		
+  		padding: 20px;   		
+	}
+
+	.navber_show ul li:hover{
+		background: #f39200;		
+		border-radius: 20px;
+		color: white;
+	}
+
+
+}
+
+/*header end*/
+
+
+/*jumboter start*/
+
+.main_jumboter{
+	box-sizing: border-box;
+	width: 100%;
+	/*padding: 1% 2% 2% 2%;*/
+}
+.jumboter_container{
+	width: 100%;
+	display: flex;
+  	flex-direction: row;  	
+}
+
+.jumboter_left{
+	flex: 50%;	
+	justify-content: center;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	padding: 10% 0px 0px 0px;
+	background-image: url("https://img.freepik.com/premium-vector/white-christmas-background-with-space-text_134545-30.jpg?w=2000");
+}
+.jumboter_right{
+	background-image: url("https://www.brightskills.com/images/banner_background.png");
+ 	flex: 50%; 	
+ 	background-color: #96bdbd;
+}
+
+.jumboter_image{
+	width: 100%;
+  	height: auto;  	
+}
+
+
+.slider_title{
+		font-size: 50px;
+    	line-height: 1.1;
+    	color: #f39200;
+    	padding: 20px 5px 2px 5px;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+	.slider_descript{
+		line-height: 24px;
+		font-size: 20px;    	
+    	color: teal;
+    	width: 80%;
+    	margin: 0 auto;
+    	height: 80px;
+    	padding: 10px 5px 20px 5px;
+		text-align: center;
+		justify-content: center;
+		align-items: center;	
+		margin-bottom:60px;
+
+	}
+	.slider_course_btn {
+	    text-align: center;
+	    justify-content: center;
+	    align-items: center;	    
+	    background-color:teal;
+	    color: white;
+	    padding: 8px 2px 2px 2px;
+	    margin: 0 auto;
+	    width: 35%;
+	    height: 37px;
+	    border-radius: 14px;
+	    cursor: pointer;
+	}
+
+	.slider_course_btn:hover{
+	    text-align: center;
+	    justify-content: center;
+	    align-items: center;
+	    background-color: #f39200;
+	    color: white;
+	    padding: 8px 2px 2px 2px;
+	    margin: 0 auto;
+	    width: 35%;
+	    height: 37px;
+	    border-radius: 14px;
+	}
+
+
+@media only screen and (max-width: 1024px) {
+ 
+	.jumboter_container{
+		width: 100%;
+		display: flex;
+  	 	flex-direction: column;  	 	
+	}
+
+	.slider_title{
+		font-size: 1.75rem;
+    	line-height: 1.1;
+    	color: teal;
+    	padding: 0px 5px 2px 5px;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+	.slider_descript{
+		font-size: 15px;
+    	line-height: 20px;
+    	color: teal;
+    	width: 80%;
+    	margin: 0 auto;
+    	height: 80px;
+    	padding: 10px 5px 20px 5px;
+		text-align: center;
+		justify-content: center;
+		align-items: center;	
+		margin-bottom: 30px;
+	}
+	.slider_course_btn {
+	    text-align: center;
+	    justify-content: center;
+	    align-items: center;
+	    background-color: #f39200;
+	    color: white;
+	    padding: 8px 2px 2px 2px;
+	    margin: 0 auto;
+	    width: 35%;
+	    height: 37px;
+	    border-radius: 14px;
+	}
+	.slider_course_btn:hover{
+	    text-align: center;
+	    justify-content: center;
+	    align-items: center;
+	    background-color:teal;
+	    color: white;
+	    padding: 8px 2px 2px 2px;
+	    margin: 0 auto;
+	    width: 35%;
+	    height: 37px;
+	    border-radius: 14px;
+	}
+
+
+}
+
+
+/*jumboter end*/
